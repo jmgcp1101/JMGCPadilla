@@ -1,18 +1,53 @@
 /* HEADER */
 
-.navbar, .navlist {
+header{
     display: flex;
-    padding: 10px
+    padding: 0%;
+}
+.name { 
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-left: 25px;
+    margin-right: 30px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
+.navlist{
+    justify-content: center;
 }
 
 li {
     display: flex;
-    margin: 15px 10px 20px 20px;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 5 px;
+    margin-left: 0px;
+}
+
+hr {
+    width: 0.1px;
+    height: 100vh;
+    margin: 0;
+    color: black;
 
 }
 
-.name {
+.nav-content {
+    width: 200px;
+
 }
 
-.navlist { 
+img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover ;
+    object-position: 0px 0.1px;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-left: 15px;
+    border-radius: 100%;
 }
