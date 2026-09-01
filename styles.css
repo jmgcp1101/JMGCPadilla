@@ -1,0 +1,18 @@
+/* HEADER */
+
+.navbar, .navlist {
+    display: flex;
+    padding: 10px
+}
+
+li {
+    display: flex;
+    margin: 15px 10px 20px 20px;
+
+}
+
+.name {
+}
+
+.navlist { 
+}
