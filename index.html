@@ -1,25 +1,63 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Michael Padilla</title>
     <link href="styles.css" rel="stylesheet">
+    <link href="about.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="nav-content">
-            <nav class="navbar">
-                <img src="assets\grad-pic-padilla.jpg" alt="profile picture">
-                <h1 class="name">John Michael Gabrielei C. Padilla</h1>
-                <ul class="navlist">
-                    <li><a href="#about">About</a></li>
-                    <li>Education</li>
-                    <li>Experience</li>
-                    <li>Projects</li>
-                </ul>
-            </nav>
+    <header id="nav-header">
+        <div id="side-nav">
+            <h1 id="name">John Michael </br> Gabrielei C. Padilla</h1>
+            <ul id="link-list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experiences</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+            <div id="icons">
+                <a href="https://www.linkedin.com/in/john-michael-gabrielei-padilla-b33250364/"  target="blank">
+                    <img id="linkedin" src="assets\linkedin icon.png" alt="linkedin account" class="social-icons">
+                </a>
+                <a href="https://github.com/jmgcp1101" target="blank">
+                    <img id="github" src="assets\github icon.png" alt="GitHub link" class="social-icons">
+                </a>
+            </div>
         </div>
         <hr>
     </header>
+    <main id="main-section">
+        <div id="about" class="section-part">
+            <img id="pfp" src="assets\grad-pic-padilla.jpg" alt="profile picture">
+            <div id="about-content">
+                <h2 class="section-titles">About Me</h2>
+                <p class="section-para">        Electronics Engineering graduate with nearly one year of hands-on experience
+                    in product development, with a growing focus on cybersecurity and web
+                    development. Experienced in Python, Linux, networking, Raspberry Pi, embedded
+                    systems, and IoT-based applications, with practical experience in system
+                    troubleshooting, hardware-software integration, and communication protocols.
+                    My background in electronics and product development has strengthened my
+                    ability to approach technical problems systematically, understand systems
+                    from both hardware and software perspectives, and develop practical solutions.
+                </p>
+                <p class="section-para">    I am particularly interested in cybersecurity, network security, and secure
+                    web development, and I am continuously expanding my skills in these areas
+                    through hands-on projects and technical learning.
+                </p>
+            </div>
+        </div>
+        <div id="education" class="section-part"></div>
+        <div id="experience" class="section-part"></div>
+        <div id="projects" class="section-part"></div>
+    </main>
+
 </body>
+
+</html>

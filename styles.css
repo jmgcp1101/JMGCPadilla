@@ -1,53 +1,146 @@
-/* HEADER */
-
-header{
-    display: flex;
-    padding: 0%;
+* {
+    margin: 0;
+    font-family: "montserrat", sans-serif;
 }
-.name { 
-    font-family: Arial, Helvetica, sans-serif;
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    animation: fadeIn 1s ease-in;
+}
+
+
+
+#main {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Side Nav Bar */
+
+#nav-header {
+    display: flex;
+}
+
+#side-nav {
+    background-color: white;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    border-right: 1px solid black;
+}
+
+#name {
     text-align: center;
-    margin-left: 25px;
-    margin-right: 30px;
+    font-size: 35px;
+    margin-top: 50px;
+    margin-right: 5px;
+    text-shadow: 2px 2px 2px gray;
+    animation: fadeIn 2s ease-in;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: column;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-.navlist{
-    justify-content: center;
+#link-list {
+    margin-top: 90px;
+}
+
+a {
+    font-style: none;
+    color: black;
+    text-decoration: none;
 }
 
 li {
-    display: flex;
+    list-style: none;
     text-align: center;
-    padding-bottom: 5px;
-    padding-top: 5 px;
-    margin-left: 0px;
+    margin-right: 40px;
+    margin-top: 40px;
+    transition: transform 0.2s ease;
 }
 
-hr {
-    width: 0.1px;
-    height: 100vh;
-    margin: 0;
-    color: black;
-
+li:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 2px gray;
 }
 
-.nav-content {
-    width: 200px;
-
+#icons {
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    margin-left: 10px;
 }
 
-img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover ;
-    object-position: 0px 0.1px;
-    margin-top: 5px;
-    margin-right: 20px;
-    margin-left: 15px;
-    border-radius: 100%;
+#linkedin {
+    width: 50px;
+    margin-top: 15px;
+    transition: transform 0.2s ease;
+}
+
+#linkedin:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 2px gray;
+}
+
+#github {
+    width: 80px;
+    height: 80px;
+    margin-top: 1px;
+    transition: transform 0.2s ease;
+}
+
+#github:hover {
+    transform: scale(1.1);
+    text-shadow: 2px 2px 2px gray;
+}
+
+#main-section {
+    margin-top: 0;
+    margin-left: 300px;
+}
+
+/* Main Sections */
+
+
+
+
+
+
+#education {
+    background-color: green;
+    width: auto;
+    height: 450px;
+}
+
+#experience {
+    background-color: yellow;
+    width: auto;
+    height: 450px;
+}
+
+
+#projects {
+    background-color: purple;
+    width: auto;
+    height: 450px;
+}
+
+.section-titles {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-para {
+    text-align: justify;
+    font-size: 20px;
+    padding: 1px 20px 20px 20px;
+    text-indent: 60px;
 }
