@@ -122,8 +122,8 @@ a {
     height: 300px;
     object-fit: cover;
     object-position: top;
-    margin-top: 80px;
-    margin-left: 60px;
+    margin-top: 200px;
+    margin-left: 80px;
     margin-right: 50px;
     flex-shrink: 0;
     border-radius: 100%;
@@ -137,7 +137,7 @@ a {
     min-height: 0;
     min-width: 0;
     height: auto;
-    margin: 40px 100px 40px 60px;
+    margin: 40px 100px 150px 60px;
     align-items: center;
 }
 
@@ -162,6 +162,7 @@ a {
     border-top-left-radius: 10%;
     box-shadow: 0px 5px 5px 5px gray;
     transition: transform 0.2s ease;
+    margin-bottom: 250px;
 }
 
 #education-content:hover {
@@ -212,17 +213,157 @@ a {
     margin-top: 20px;
 }
 
+/* Experience */
 
 #experience {
-    background-color: yellow;
+    background-color: white;
     width: 100%;
-    height: 450px;
+    height: auto;
+
 }
 
+#exp-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+#long-line {
+    background-color: black;
+    position: absolute;
+    width: 1000px;
+    height: 5px;
+    border: 1px solid black;
+    color: black;
+    margin: 60px 70px 120px 300px;
+    border-radius: 100%;
+
+}
+
+#c1 {
+    background-color: black;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin: 40px 300px 300px 500px;
+    justify-items: center;
+    align-content: center;
+}
+
+#ic1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+#c2 {
+    background-color: black;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 100%;
+    margin: 40px 300px 300px 1025px;
+    object-fit: cover;
+    justify-items: center;
+    align-content: center;
+}
+
+#ic2 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.exp-containers {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#ojt {
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+    margin-top: 130px;
+    margin-left: 325px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 10%;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+#first-job {
+    width: 400px;
+    height: 650px;
+    border: 1px solid black;
+    margin-top: 130px;
+    margin-left: 140px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 5px gray;
+}
+
+#ojt,
+#c1,
+#ic1,
+#first-job,
+#c2,
+#ic2 {
+    transition: transform 0.2s ease;
+}
+
+#experience:has(#ojt:hover) #ojt,
+#experience:has(#ojt:hover) #c1,
+#experience:has(#ojt:hover) #ic1 {
+    transform: scale(1.05);
+}
+
+#experience:has(#first-job:hover) #first-job,
+#experience:has(#first-job:hover) #c2,
+#experience:has(#first-job:hover) #ic2 {
+    transform: scale(1.05);
+}
+
+/* Projects */
 #projects {
     background-color: purple;
     width: 100%;
     height: 450px;
+}
+
+#networking {
+    display: flex;
+    gap: 50px;
+}
+
+#intro {
+    width: 250px;
+    height: 400px;
+}
+
+#switching {
+    width: 250px;
+    height: 400px;
+    
+}
+
+#core {
+    width: 250px;
+    height: 400px;
+    
+}
+
+#advanced {
+    width: 250px;
+    height: 400px;
+    
 }
 
 .section-titles {
